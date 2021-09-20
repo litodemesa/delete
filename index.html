@@ -1,3 +1,5 @@
+<!-- https://www.quackit.com/html/html_editors/scratchpad/?example=/css/examples/colors/column-rule-color -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,17 +7,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Websites</title>
+    <title>Cloning W3Schools </title>
+    <style>
+        h2,
+        p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template: repeat(5, 50px) / repeat(3, 1fr);
+            grid-gap: 12px;
+            font-family: "Helvetica", "courier new";
+        }
+
+        .sub-container {
+            background-color: #c1beb8;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 5px;
+            padding: 12px;
+        }
+
+        .sub-container:hover {
+            color: white;
+            background-color: black;
+        }
+    </style>
+
 </head>
 
 <body>
-    <h1>Favorite Fruit</h1>
-    <p>In order of preference....</p>
-    <ol start="10">
-        <li>Bananas</li>
-        <li>Oranges</li>
-        <li>Lychees</li>
-    </ol>
+    <h2>HTML References</h2>
+    <p>At W3Schools you will find complete references about HTML elements, attributes, events, color names, entities,
+        character-sets, URL encoding, language codes, HTTP messages, browser support, and more:</p>
+    <div class="container">
+        <div class="sub-container">HTML Elements</div>
+        <div class="sub-container">Browser Support</div>
+        <div class="sub-container">Attributes</div>
+        <div class="sub-container">Global Attributes</div>
+        <div class="sub-container">Event Attributes</div>
+        <div class="sub-container">Color Names</div>
+        <div class="sub-container">Canvas</div>
+        <div class="sub-container">Audio/Video DOM</div>
+        <div class="sub-container">Character Sets</div>
+        <div class="sub-container">URL Encoding</div>
+        <div class="sub-container">Language Codes</div>
+        <div class="sub-container">Country Codes</div>
+        <div class="sub-container">HTTP Messages</div>
+        <div class="sub-container">Px to Em Converter</div>
+        <div class="sub-container">Keyboard Shortcuts</div>
+    </div>
+    <marquee behavior="scroll" direction="left"><img src="tholits2.jpg" alt=""></marquee>
+    <h2>What Can JavaScript Do?</h2>
+    <p id="demo">JavaScript can change HTML content.</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!" '>Click Me!</button>
+
+    <!-- JavaScript in <head> -->
+    <script>
+        function myFunction() {
+            document.getElementById("demo2").innerHTML = "Paragraph changed.";
+        }
+    </script>
+    <h2>Demo JavaScript in Head</h2>
+    <p id="demo2">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
 </body>
 
 </html>
